@@ -5,6 +5,8 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { Navbar , HotelCard , Categories} from "../../components/";
 import "./Home.css";
 
+import { useCategory } from "../../context";
+
 
 export const Home = () => {
 
@@ -12,18 +14,21 @@ export const Home = () => {
   const [currentIndex , setCurrentIndex] = useState(16);
   const [testData , setTestData] = useState([]);
   const [hotels , setHotels] = useState([]);
+  const { hotelCategory }  = useCategory();
  
   useEffect(() => {
     ( async () => {
       try {
-        const {data} = await axios.get("https://breeze-travel-app.cyclic.app/api/hotels");
+        const {data} = await axios.get(`https://breeze-travel-app.cyclic.app/api/hotels?category=${hotelCategory}`);
+        console.log(data);
         setTestData(data);
-        setHotels(data ? data.slice(16) : []);
+        // setHotels(data);
+        setHotels(data ? data.slice(0 , 16) : []);
       } catch (error) {
         console.log(error);
       }
-    })()
-  }, [])
+    })();
+  }, [hotelCategory])
 
   const fetchMoreData = () => {
     if (hotels.length >= testData.length){
@@ -40,6 +45,7 @@ export const Home = () => {
       }
     } , 1000)
   }
+  console.log("hotels" , hotels);
 
   return (
     <Fragment>
@@ -55,7 +61,9 @@ export const Home = () => {
               endMessage = {<p className="alert-text">You have seen it all !</p>}
             >
                 <main className="main d-flex align-center wrap gap-larger">
+                
                   {
+                    
                     hotels && hotels.map(hotel => <HotelCard key={hotel._id} hotel={hotel} />)
                   }
                 </main>
