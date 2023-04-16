@@ -20,7 +20,7 @@ export const Home = () => {
     ( async () => {
       try {
         const {data} = await axios.get(`https://breeze-travel-app.cyclic.app/api/hotels?category=${hotelCategory}`);
-        console.log(data);
+        // console.log(data);
         setTestData(data);
         // setHotels(data);
         setHotels(data ? data.slice(0 , 16) : []);
@@ -45,7 +45,7 @@ export const Home = () => {
       }
     } , 1000)
   }
-  console.log("hotels" , hotels);
+  // console.log("hotels" , hotels);
 
   return (
     <Fragment>

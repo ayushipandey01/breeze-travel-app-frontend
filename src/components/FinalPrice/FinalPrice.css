@@ -1,0 +1,8 @@
+.price-details-container{
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    width: 25rem;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-right: 9rem;
+}

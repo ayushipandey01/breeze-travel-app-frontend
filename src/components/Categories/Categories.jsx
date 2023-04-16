@@ -32,7 +32,7 @@ export const Categories = () => {
     const handleCategoryClick = (category) => {
         setHotelCategory(category);
     }
-    console.log("Hotel Category : " ,hotelCategory);
+    // console.log("Hotel Category : " ,hotelCategory);
 
   return (
     <section className="categories d-flex align-center gap-large cursor-pointer shadow">
