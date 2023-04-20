@@ -14,7 +14,7 @@ export const HotelDetails = ({singleHotel}) => {
     <div className="hotel-details-container">
         <div className="host-details">
             <p className="host-name">Hosted by {hostName}, Joined on {hostJoinedOn}</p>
-            <span className="span">2 {numberOfguest}. 1 {numberOfBedrooms}. 1 {numberOfBeds} {numberOfBathrooms}</span>
+            <span className="span">{numberOfguest} guests. {numberOfBedrooms} bedrooms. {numberOfBeds} beds. {numberOfBathrooms} bathrooms</span>
         </div>
         <div className="key-features host-details">
             <div className="gutter-bottom-small">

@@ -53,7 +53,7 @@ export const Categories = () => {
                 <button 
                  className="button btn-category btn-right fixed cursor-pointer"
                 onClick={handleShowMoreRightClick}>
-                <span class="material-icons-outlined">
+                <span className="material-icons-outlined">
                 chevron_right
                 </span>
                 </button>

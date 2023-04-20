@@ -33,7 +33,7 @@ export const SingleHotel = () => {
         <HotelImages singleHotel = {singleHotel}/>
         <div className="d-flex">
           <HotelDetails singleHotel = {singleHotel}/>
-          <FinalPrice />
+          <FinalPrice singleHotel = {singleHotel}/>
         </div>
       </main>
     </Fragment>

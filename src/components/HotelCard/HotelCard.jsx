@@ -24,7 +24,7 @@ export const HotelCard = ({hotel}) => {
           <div className="d-flex align-center">
             <span className="location">{address}, {state}</span>
             <span className="rating d-flex align-center">
-              <span class="material-icons-outlined">star</span>
+              <span className="material-icons-outlined">star</span>
               <span>{rating}</span>
             </span>
           </div>
@@ -38,7 +38,7 @@ export const HotelCard = ({hotel}) => {
       </div>
       <div className="wishlist">
         <button className="button btn-wishlist absolute">
-          <span class="material-icons favorite cursor">favorite</span>
+          <span className="material-icons favorite cursor">favorite</span>
         </button>
       </div>
     </div>
