@@ -38,7 +38,7 @@ export const HotelDetails = ({singleHotel}) => {
                 <span className="apps material-icons-outlined">apps</span>GFree cancellation 
             </p>            
         </div>
-        <div className="amenities-container host-details">
+        <div className="amenities-container">
             <p className="p amenities">Whatthis place offera</p>
             <div className="d-flex gap-xxl">
                 <div className="d-flex direction-column">

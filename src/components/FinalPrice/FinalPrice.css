@@ -2,7 +2,7 @@
     align-self: flex-start;
     background-color: var(--background-color);
     padding: 1.5rem;
-    width: 25rem;
+    width: 27rem;
     margin-left: auto;
     margin-top: 2rem;
     margin-right: 9rem;
@@ -37,4 +37,12 @@
 
 .justify-space-between{
     justify-content: space-between;
+}
+
+.guest-count-input{
+    border: none;
+}
+
+.guest-count-input:focus{
+    outline: none;
 }

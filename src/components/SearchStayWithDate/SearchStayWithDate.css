@@ -20,6 +20,7 @@
     padding: 0.5rem;
     border: none;
     background-color: var(--background-color);
+    
 }
 
 .input:focus{
@@ -54,7 +55,7 @@
     overflow-y: auto;
     border-radius: 4px;
     top: 10rem;
-    left: 4%;
+    left: 18%;
 }
 
 .p{
