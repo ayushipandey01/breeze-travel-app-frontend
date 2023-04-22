@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect , useState } from "react";
-import { useCategory } from "../../context/";
+import { useCategory ,useFilter} from "../../context/";
 import "./Categories.css";
 
 export const Categories = () => {
@@ -8,6 +8,7 @@ export const Categories = () => {
     const [categories , setCategories] = useState([]);
     const [numberOfcategoryToShow , setNumberOfcategoryToShow] = useState(0);
     const { hotelCategory , setHotelCategory } = useCategory();
+    const { filterDispatch } = useFilter();
 
     const handleShowMoreRightClick = () => {
         setNumberOfcategoryToShow(prev => prev+10)
@@ -15,6 +16,12 @@ export const Categories = () => {
 
     const handleShowMoreLeftClick = () => {
         setNumberOfcategoryToShow(prev => prev-10)
+    };
+
+    const handleFilterClick = () => {
+        filterDispatch({
+            type : "SHOW_FILTER_MODAL"
+        })
     };
 
     useEffect(()=>{
@@ -34,6 +41,7 @@ export const Categories = () => {
     }
     // console.log("Hotel Category : " ,hotelCategory);
 
+    
   return (
     <section className="categories d-flex align-center gap-large cursor-pointer shadow">
         {
@@ -47,7 +55,7 @@ export const Categories = () => {
                 </button>
             )
         }
-        {categories && categories.map(({ _id ,category })=> <span className={`span-category ${category === hotelCategory ? "border-bottom" : ""}`} onClick = {() => handleCategoryClick(category)} key ={_id}>{category}</span>)}
+        {categories && categories.map(({ _id ,category })=> (<span className={`span-category ${category === hotelCategory ? "border-bottom" : ""}`} onClick = {() => handleCategoryClick(category)} key ={_id}>{category}</span>))}
         {
             numberOfcategoryToShow - 10 < categories.length && (
                 <button 
@@ -58,7 +66,11 @@ export const Categories = () => {
                 </span>
                 </button>
             )
-        }        
+        }    
+        <button className="button btn-filter d-flex align-center gap-small cursor-pointer fixed" onClick={handleFilterClick}>
+            <span className="material-icons-outlined">filter_alt</span>  
+            <span>Filter</span>  
+        </button>    
     </section>
   )
 }
