@@ -8,6 +8,8 @@ const initialValue = {
   email: "",
   password: "",
   confirmPassword: "",
+  accessToken : "",
+  name : "",
   selectedTab: "login",
 };
 
@@ -21,6 +23,8 @@ const AuthProvider = ({ children }) => {
       password,
       confirmPassword,
       number,
+      accessToken,
+      name,
       isAuthModalOpen,
       selectedTab,
     },
@@ -34,6 +38,8 @@ const AuthProvider = ({ children }) => {
         password,
         confirmPassword,
         number,
+        accessToken,
+        name,
         isAuthModalOpen,
         selectedTab,
         authDispatch,

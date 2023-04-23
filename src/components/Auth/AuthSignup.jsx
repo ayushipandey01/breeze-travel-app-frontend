@@ -7,16 +7,26 @@ import {
   validatePassword,
 } from "../../utils";
 
+import { signupHandler } from "../../services";
+
+let isNameValid,
+  isNumberValid,
+  isEmailValid,
+  isPasswordValid,
+  isConfirmPasswordValid;
+
 export const AuthSignup = () => {
-  const { username, email, password, number, confirmPassword, authDispatch } =
+  const { number ,username, email, password, confirmPassword, authDispatch } =
     useAuth();
 
-    console.log({username, email, password, number, confirmPassword, authDispatch});
+  // console.log({username, email, password, number, confirmPassword, authDispatch});
+
+  
 
   const handleNumberChange = (event) => {
-    const isNumberValid = validateNumber(event.target.value);
+    isNumberValid = validateNumber(event.target.value);
     if (isNumberValid) {
-        console.log("Valid Input")
+      console.log("Valid Input")
       authDispatch({
         type: "NUMBER",
         payload: event.target.value,
@@ -27,9 +37,9 @@ export const AuthSignup = () => {
   };
 
   const handleNameChange = (event) => {
-    const isNameValid = validateName(event.target.value);
+    isNameValid = validateName(event.target.value);
     if (isNameValid) {
-        console.log("Valid Input")
+      console.log("Valid Input")
       authDispatch({
         type: "NAME",
         payload: event.target.value,
@@ -40,9 +50,9 @@ export const AuthSignup = () => {
   };
 
   const handleEmailChange = (event) => {
-    const isEmailValid = validateEmail(event.target.value);
+    isEmailValid = validateEmail(event.target.value);
     if (isEmailValid) {
-        console.log("Valid Input")
+      console.log("Valid Input")
       authDispatch({
         type: "EMAIL",
         payload: event.target.value,
@@ -53,9 +63,9 @@ export const AuthSignup = () => {
   };
 
   const handlePasswordChange = (event) => {
-    const isPasswordValid = validatePassword(event.target.value);
+    isPasswordValid = validatePassword(event.target.value);
     if (isPasswordValid) {
-        console.log("Valid Input")
+      console.log("Valid Input")
       authDispatch({
         type: "PASSWORD",
         payload: event.target.value,
@@ -66,9 +76,9 @@ export const AuthSignup = () => {
   };
 
   const handleConfirmPasswordChange = (event) => {
-    const isConfirmPasswordValid = validatePassword(event.target.value);
+    isConfirmPasswordValid = validatePassword(event.target.value);
     if (isConfirmPasswordValid) {
-        console.log("Valid Input")
+      console.log("Valid Input")
       authDispatch({
         type: "CONFIRM_PASSWORD",
         payload: event.target.value,
@@ -78,9 +88,25 @@ export const AuthSignup = () => {
     }
   };
 
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    if (
+      isNumberValid &&
+      isNameValid &&
+      isEmailValid &&
+      isPasswordValid &&
+      isConfirmPasswordValid
+    ) {
+      signupHandler( number,username, email, password);
+    }
+    authDispatch({
+      type: "CLEAR_USER_DATA"
+    })
+  };
+
   return (
     <div className="auth-container">
-      <form>
+      <form onSubmit={handleFormSubmit}>
         <div className="d-flex direction-column lb-in-container">
           <label className="auth-label">
             Mobile Number<span className="asterisk">*</span>
