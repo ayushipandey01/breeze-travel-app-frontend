@@ -34,27 +34,24 @@ export const AuthLogin = () => {
     }
   };
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
-    if (
-      isNumberValid &&
-      isPasswordValid 
-    ) {
-      const { accessToken , username } = loginHandler(number, password);
+    if (isNumberValid && isPasswordValid) {
+      const { accessToken, username } = await loginHandler(number, password);
       authDispatch({
-        type : "SET_ACCESS_TOKEN",
-        payload : accessToken
-      })
+        type: "SET_ACCESS_TOKEN",
+        payload: accessToken,
+      });
       authDispatch({
-        type : "SET_USER_NAME",
-        payload : username
+        type: "SET_USER_NAME",
+        payload: username,
       });
     }
     authDispatch({
-      type: "CLEAR_USER_DATA"
-    })
+      type: "CLEAR_USER_DATA",
+    });
     authDispatch({
-      type : "SHOW_AUTH_MODAL",
+      type: "SHOW_AUTH_MODAL",
     });
   };
 

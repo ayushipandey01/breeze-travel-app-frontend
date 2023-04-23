@@ -53,3 +53,7 @@
     color: #71717a;
 }
 
+.fav-selected{
+    color: var(--wishlist);
+}
+
