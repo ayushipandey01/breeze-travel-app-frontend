@@ -1,12 +1,16 @@
 import "./Auth.css";
 import { loginHandler } from "../../services";
 import { validateNumber, validatePassword } from "../../utils";
-import { useAuth } from "../../context";
+import { useAuth , useAlert} from "../../context";
 
 let isNumberValid, isPasswordValid;
 
+
+
 export const AuthLogin = () => {
   const { authDispatch, number, password } = useAuth();
+
+  const { setAlert } = useAlert();
 
   const handleNumberChange = (event) => {
     isNumberValid = validateNumber(event.target.value);
@@ -46,7 +50,33 @@ export const AuthLogin = () => {
         type: "SET_USER_NAME",
         payload: username,
       });
+      setAlert({
+        open: true,
+        message: `Login Successful !`,
+        type: "success"
+      })
     }
+    authDispatch({
+      type: "CLEAR_USER_DATA",
+    });
+    authDispatch({
+      type: "SHOW_AUTH_MODAL",
+    });
+  };
+
+  const handleTestCredentialsClick = async () => {
+    const { accessToken, username } = await loginHandler(
+      8888888888,
+      "Qwerty@123"
+    );
+    authDispatch({
+      type: "SET_ACCESS_TOKEN",
+      payload: accessToken,
+    });
+    authDispatch({
+      type: "SET_USER_NAME",
+      payload: username,
+    });
     authDispatch({
       type: "CLEAR_USER_DATA",
     });
@@ -89,7 +119,10 @@ export const AuthLogin = () => {
           <button className="button btn-primary btn-login cursor">Login</button>
         </div>
         <div className="cta">
-          <button className="button btn-outline-primary cursor-pointer">
+          <button
+            className="button btn-outline-primary cursor-pointer"
+            onClick={handleTestCredentialsClick}
+          >
             Login with test credentials
           </button>
         </div>
