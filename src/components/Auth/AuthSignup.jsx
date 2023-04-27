@@ -1,5 +1,5 @@
 import "./Auth.css";
-import { useAuth } from "../../context";
+import { useAuth , useAlert} from "../../context";
 import {
   validateName,
   validateEmail,
@@ -21,9 +21,10 @@ export const AuthSignup = () => {
 
   // console.log({username, email, password, number, confirmPassword, authDispatch});
 
-  
+  const { setAlert } = useAlert();  
 
   const handleNumberChange = (event) => {
+    console.log(event.target.value)
     isNumberValid = validateNumber(event.target.value);
     if (isNumberValid) {
       console.log("Valid Input")
@@ -98,10 +99,17 @@ export const AuthSignup = () => {
       isConfirmPasswordValid
     ) {
       signupHandler( number,username, email, password);
+      authDispatch({
+        type: "CLEAR_USER_DATA"
+      })
     }
-    authDispatch({
-      type: "CLEAR_USER_DATA"
-    })
+    setTimeout (()=> {
+      setAlert({
+        open: true,
+        message: `Sign-in Successful !!! Please Login now.`,
+        type: "success"
+      })
+    }, 4000)    
   };
 
   return (

@@ -10,7 +10,7 @@ import {
   Filter,
   AuthModal,
   ProfileDropDown,
-  Alert
+  Alert,
 } from "../../components/";
 import "./Home.css";
 
@@ -44,7 +44,6 @@ export const Home = () => {
 
   const { isAuthModalOpen, isDropDownModalOpen } = useAuth();
   const { alert } = useAlert();
-
 
   useEffect(() => {
     (async () => {
@@ -98,8 +97,6 @@ export const Home = () => {
     filteredHotelsByRatings,
     isCancelable
   );
-
-  console.log({isDropDownModalOpen});
 
   return (
     <div className="relative">

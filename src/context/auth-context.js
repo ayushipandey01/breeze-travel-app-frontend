@@ -11,7 +11,7 @@ const initialValue = {
   accessToken : "",
   name : "",
   selectedTab: "login",
-  isDropDownModalOpen : false
+  isDropDownModalOpen : false,
 };
 
 const AuthContext = createContext(initialValue);
@@ -19,27 +19,27 @@ const AuthContext = createContext(initialValue);
 const AuthProvider = ({ children }) => {
   const [
     {
+      number,
       username,
       email,
       password,
-      confirmPassword,
-      number,
+      confirmPassword,      
       accessToken,
       name,
       isAuthModalOpen,
       selectedTab,
-      isDropDownModalOpen
+      isDropDownModalOpen,
     },
     authDispatch,
   ] = useReducer(authReducer, initialValue);
   return (
     <AuthContext.Provider
       value={{
+        number,
         username,
         email,
         password,
-        confirmPassword,
-        number,
+        confirmPassword,        
         accessToken,
         name,
         isAuthModalOpen,

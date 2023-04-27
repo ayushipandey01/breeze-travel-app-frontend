@@ -34,12 +34,12 @@ export const Wishlist = () => {
             ))}
         </section>
       ) : (
-        <p className="d-flex justify-center">
+        <p className="wishlist-para d-flex justify-center">
           Wishlist Empty. &nbsp;
           <span className="click-here" onClick={handleClickHereClick}>
             Click here{" "}
           </span>{" "}
-          &nbsp; to add to wishslit
+          &nbsp; to add to wishslist
         </p>
       )}
       {isDropDownModalOpen && <ProfileDropDown />}

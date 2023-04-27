@@ -1,12 +1,26 @@
-.wishlist-page{
-    padding: 12rem 3rem 1.5rem 3rem;
+.wishlist-page {
+  padding: 12rem 2rem 4rem 2rem;
 }
 
-.heading-wishlist{
-    margin-top: 5rem;
-    font-size: 2.5rem;
-    padding : 2rem;
-    z-index: 2;
-    position: fixed;
-    margin-left: 38%;
+.heading-wishlist {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  padding: 2rem;
+  position: absolute;
+  margin-left: 38%;
+}
+
+.wishlist-para {
+  margin-top: 13rem;
+  margin-left: 36%;
+  position: absolute;
+}
+
+.click-here {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.click-here:hover {
+  cursor: pointer;
 }
