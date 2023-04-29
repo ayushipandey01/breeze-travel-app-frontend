@@ -98,10 +98,10 @@ export const AuthSignup = () => {
       isConfirmPasswordValid
     ) {
       signupHandler( number,username, email, password);
-      authDispatch({
-        type: "CLEAR_USER_DATA"
-      })
     }
+    authDispatch({
+      type: "CLEAR_USER_DATA"
+    })
     setTimeout (()=> {
       setAlert({
         open: true,

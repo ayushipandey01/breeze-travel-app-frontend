@@ -64,26 +64,26 @@ export const AuthLogin = () => {
     });
   };
 
-  const handleTestCredentialsClick = async () => {
-    const { accessToken, username } = await loginHandler(
-      8888888888,
-      "Qwerty@123"
-    );
-    authDispatch({
-      type: "SET_ACCESS_TOKEN",
-      payload: accessToken,
-    });
-    authDispatch({
-      type: "SET_USER_NAME",
-      payload: username,
-    });
-    authDispatch({
-      type: "CLEAR_USER_DATA",
-    });
-    authDispatch({
-      type: "SHOW_AUTH_MODAL",
-    });
-  };
+  // const handleTestCredentialsClick = async () => {
+  //   const { accessToken, username } = await loginHandler(
+  //     8888888888,
+  //     "Qwerty@123"
+  //   );
+  //   authDispatch({
+  //     type: "SET_ACCESS_TOKEN",
+  //     payload: accessToken,
+  //   });
+  //   authDispatch({
+  //     type: "SET_USER_NAME",
+  //     payload: username,
+  //   });
+  //   authDispatch({
+  //     type: "CLEAR_USER_DATA",
+  //   });
+  //   authDispatch({
+  //     type: "SHOW_AUTH_MODAL",
+  //   });
+  // };
 
   return (
     <div className="auth-container">
@@ -118,14 +118,14 @@ export const AuthLogin = () => {
         <div>
           <button className="button btn-primary btn-login cursor">Login</button>
         </div>
-        <div className="cta">
+        {/* <div className="cta">
           <button
             className="button btn-outline-primary cursor-pointer"
             onClick={handleTestCredentialsClick}
           >
             Login with test credentials
           </button>
-        </div>
+        </div> */}
       </form>
     </div>
   );

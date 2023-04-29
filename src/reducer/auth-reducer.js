@@ -43,8 +43,8 @@ export const authReducer = (state, { type, payload }) => {
     case "CLEAR_USER_DATA":
       return {
         ...state,
-        username: "",
         number: "",
+        username: "",        
         email: "",
         password: "",
         confirmPassword: "",
