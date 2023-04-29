@@ -24,7 +24,6 @@ export const AuthSignup = () => {
   const { setAlert } = useAlert();  
 
   const handleNumberChange = (event) => {
-    console.log(event.target.value)
     isNumberValid = validateNumber(event.target.value);
     if (isNumberValid) {
       console.log("Valid Input")
