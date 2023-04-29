@@ -4,6 +4,7 @@ import { useDate, useHotel } from "../../context";
 import { v4 as uuid } from "uuid";
 import "./Payment.css";
 import axios from "axios";
+import { UseSpinner } from "../../components";
 
 export const Payment = () => {
   const params = useParams();
@@ -45,21 +46,30 @@ export const Payment = () => {
   //   });
   // };
 
-  const handleConfirmBookingClick = async () => {
+  const handleConfirmBookingClick = () => {
+    navigate("/confirm/stay/payment/in-progress");
+
+    // navigate("/order-summary");
+    // navigate("/confirm/stay/payment/in-progress");
     setHotel({
-            ...singleHotel,
-            orderId: uuid(),
-            checkInDate: checkInDate.toLocaleDateString("en-US", {
-              day: "numeric",
-              month: "short",
-            }),
-            checkOutDate: checkOutDate.toLocaleDateString("en-US", {
-              day: "numeric",
-              month: "short",
-            }),
-            totalPayableAmount,
-          });
-    navigate("/order-summary");
+      ...singleHotel,
+      orderId: uuid(),
+      checkInDate: checkInDate.toLocaleDateString("en-US", {
+        day: "numeric",
+        month: "short",
+      }),
+      checkOutDate: checkOutDate.toLocaleDateString("en-US", {
+        day: "numeric",
+        month: "short",
+      }),
+      totalPayableAmount,
+    });
+
+    setTimeout(() => {
+      navigate("/order-summary");
+    }, 5000);
+
+    // navigate("/order-summary");
     // const response = await loadScript(
     //   "https://checkout.razorpay.com/v1/checkout.js"
     // );

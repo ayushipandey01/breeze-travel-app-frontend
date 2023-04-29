@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useWishlist, useAuth, useAlert } from "../../context";
+import { useWishlist, useAuth, useAlert, useDate } from "../../context";
 import { findHotelInWishlist } from "../../utils";
 
 import "./HotelCard.css";
@@ -8,6 +8,7 @@ export const HotelCard = ({ hotel }) => {
   const { _id, name, image, address, state, rating, price } = hotel;
   const { wishlistDispatch, wishlist } = useWishlist();
   const { accessToken, authDispatch } = useAuth();
+  const { dateDispatch } = useDate();
   const { setAlert } = useAlert();
 
   const navigate = useNavigate();
@@ -15,9 +16,12 @@ export const HotelCard = ({ hotel }) => {
   const isHotelInWishlist = findHotelInWishlist(wishlist, _id);
 
   const handleHotelCardClick = () => {
-    if (accessToken) {
+    if (accessToken) {      
       navigate(`/hotels/${name}/${address}-${state}/${_id}/reserve`);
-      
+      dateDispatch({
+        type : "DESTINATION",
+        payload : name
+      })
     } else {
       setAlert({
         open: true,

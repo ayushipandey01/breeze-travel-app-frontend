@@ -9,7 +9,8 @@
 }
 
 .heading-1{
-    font-size: 1.75rem; 
+    font-size: 2.5rem; 
+    font-weight: 300px;
     color: var(--primary-color);
     padding: 0;
 }

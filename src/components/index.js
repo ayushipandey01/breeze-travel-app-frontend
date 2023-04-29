@@ -12,3 +12,4 @@ export { AuthSignup } from "./Auth/AuthSignup";
 export { AuthModal } from "./AuthModal/AuthModal";
 export { ProfileDropDown} from "./ProfileDropDown/ProfileDropDown";
 export { Alert } from "./Alert/Alert";
+export { UseSpinner } from "./Spinner/UseSpinner";

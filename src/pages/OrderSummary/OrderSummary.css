@@ -1,6 +1,6 @@
 .os-container {
     width: 45rem;
-    padding: 3rem 2rem 3rem 2rem;
+    padding: 1rem 2rem 2rem 1rem;
     color: var(--text-color-primary);
     margin-left: 25%;
 }
@@ -31,7 +31,7 @@
 }
 
 .fs-md {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .span-md {
