@@ -12,6 +12,7 @@
     --container-border-color: #707070;
     --overlay: rgba(0, 0, 0, 0.3);
     --wishlist: #dc2626;
+    --valid-input : #16a34a;
 }
 
 * {

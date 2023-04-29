@@ -22,7 +22,7 @@
 }
 
 .lb-in-container {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .auth-input:focus {
@@ -52,4 +52,18 @@
 .button.btn-outline-primary:hover {
   background-color: var(--primary-color);
   color: var(--background-color);
+}
+
+.signup-span{
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+}
+
+.singup-success{
+  color: var(--valid-input);  
+}
+
+.singup-wrong{
+  color: var(--wishlist);
 }
