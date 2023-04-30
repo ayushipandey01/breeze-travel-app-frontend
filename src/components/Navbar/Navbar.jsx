@@ -13,6 +13,8 @@ export const Navbar = ({ route }) => {
     });
   };
 
+  console.log({accessToken});
+
   const handleAuthClick = () => {
     if (accessToken) {
       authDispatch({

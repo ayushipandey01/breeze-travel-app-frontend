@@ -16,21 +16,21 @@ export const HotelCard = ({ hotel }) => {
   const isHotelInWishlist = findHotelInWishlist(wishlist, _id);
 
   const handleHotelCardClick = () => {
-    if (accessToken) {      
+    if (accessToken) {
       navigate(`/hotels/${name}/${address}-${state}/${_id}/reserve`);
       dateDispatch({
-        type : "DESTINATION",
-        payload : name
-      })
+        type: "DESTINATION",
+        payload: name,
+      });
     } else {
+      authDispatch({
+        type: "SHOW_AUTH_MODAL",
+      });
       setAlert({
         open: true,
         message: `Login to the site first !!!`,
-        type: "success"
-      })
-      authDispatch({
-        type: "SHOW_AUTH_MODAL",
-      });      
+        type: "success",
+      });
     }
   };
 
@@ -55,18 +55,19 @@ export const HotelCard = ({ hotel }) => {
         setAlert({
           open: true,
           message: `Hotel:: ${name} removed from wishlist`,
-          type: "success"
-        })
+          type: "success",
+        });
       }
     } else {
+      console.log("not found")
       authDispatch({
         type: "SHOW_AUTH_MODAL",
       });
       setAlert({
         open: true,
         message: `Login to the site first !!!`,
-        type: "success"
-      })
+        type: "success",
+      });
     }
   };
 
