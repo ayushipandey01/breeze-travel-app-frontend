@@ -1,4 +1,4 @@
-![ExtensryNBg](image.png)
+![ExtensryNBg](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/5d6ab7052525f9f927cc491fabbcac79ac5d701d/.github/images/airplane.png)
 
 
 # Extensry
