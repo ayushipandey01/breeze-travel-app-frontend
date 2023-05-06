@@ -18,32 +18,32 @@ Login/Signup Page
 Home Page
 
 - In the home page, you can see search bar in the Navbar section, Hotel cards, filter button and profile drop down menu.
-(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/home_page.png)
+![Home](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/home_page.png)
 
 
 Search Bar
 -   In the Navbar, you will find a search bar in which you can search the hotels according to your preffered dates and guests.
-(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/search_bar.png)
+![Searchbar](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/search_bar.png)
 
 Filter Modal
 -   In the Navbar, you will find Filter button where you can filter out Hotels according to Price range, Number of beds , bedrooms and bathroms , property type , ratings and free cancellation.
-(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/filter_modal.png)
+![Filter](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/filter_modal.png)
 
 Wishlist Page 
 -   In the Navbar, under Profile drop down you will find the option to go to the Wishlist page where you cna find the hotels which are wishlisted.
-(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/wishlist_page.png)
+![Wishlist](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/wishlist_page.png)
 
 Hotel details Page 
 -   In the Home Page, by clicking on the Hotel Card you will see the hotel details and you can also put in check in and check out dates and number of guests as well from thsi page and proceed towards payment confirmation.
-(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/hotel_details.png)
+![Hotel details](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/hotel_details.png)
 
 Confirm booking Page 
 -   On this page , your trip details will be shown and the total amount to be paid. 
-(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/confirm_booking.png)
+![Confirm booking](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/confirm_booking.png)
 
 Order Confirmation Page 
 -   On this page , your order id will get displayed with your trip details. 
-(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/order_summary.png)
+![Order confirmation](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/order_summary.png)
 
 
 ## Tech Stack
