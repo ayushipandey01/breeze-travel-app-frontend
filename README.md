@@ -1,7 +1,8 @@
+# Breeze Travel App
+
+
 ![Breeze Travel App](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/5d6ab7052525f9f927cc491fabbcac79ac5d701d/.github/images/airplane.png)
 
-
-# Breeze Travel App
 
 [Breeze Travel App](https://breeze-travelling-hotel-app.netlify.app/) is a hotel booking website where you can filter out hotels according to rating, number of rooms , bedrooms and price range. 
 
