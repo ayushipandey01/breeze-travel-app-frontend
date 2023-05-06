@@ -7,7 +7,9 @@
 
 
 ## List of features
-[Home Page](https://todo-list-browser-extension.netlify.app/)
+<!-- [Home Page](https://todo-list-browser-extension.netlify.app/) -->
+Home Page
+
 - In the home page, you can start by adding your name and then press the enter key which will route you to the task page. If you refresh the home page you will see a different soothing background image.
 
 Task Page
