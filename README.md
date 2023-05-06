@@ -12,7 +12,7 @@
 
 Login/Signup Page
 - In the login page, you can start by logging in to the site or if you are a new user you can signup and then continue logging in to the site.
-(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/login_page.png)
+![Login](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/login_page.png)
 
 
 Home Page
