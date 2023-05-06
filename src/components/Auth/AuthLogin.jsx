@@ -68,11 +68,12 @@ export const AuthLogin = () => {
       authDispatch({
         type: "SHOW_AUTH_MODAL",
       });
-      setAlert({
-        open: true,
-        message: `Login Un-successful ! Please try again with valid credentials.`,
-        type: "success"
-      })
+      // setAlert({
+      //   open: true,
+      //   message: `Login Un-successful ! Please try again with valid credentials.`,
+      //   type: "success"
+      // })
+      alert("Login Un-successful ! Please try again with valid credentials.")
     }    
   };
 
