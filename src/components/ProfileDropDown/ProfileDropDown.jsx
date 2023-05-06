@@ -28,6 +28,9 @@ export const ProfileDropDown = () => {
             type: "SHOW_DROP_DOWN_OPTIONS"
         })
         navigate("/");
+        filterDispatch({
+            type : "CLEAR_ALL"
+        })
     }
 
     const handleLogoutClick = () => {
