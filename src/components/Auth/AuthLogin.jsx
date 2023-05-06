@@ -50,18 +50,30 @@ export const AuthLogin = () => {
         type: "SET_USER_NAME",
         payload: username,
       });
+      authDispatch({
+        type: "CLEAR_USER_DATA",
+      });
+      authDispatch({
+        type: "SHOW_AUTH_MODAL",
+      });
       setAlert({
         open: true,
         message: `Login Successful !`,
         type: "success"
       })
-    }
-    authDispatch({
-      type: "CLEAR_USER_DATA",
-    });
-    authDispatch({
-      type: "SHOW_AUTH_MODAL",
-    });
+    }else{
+      authDispatch({
+        type: "CLEAR_USER_DATA",
+      });
+      authDispatch({
+        type: "SHOW_AUTH_MODAL",
+      });
+      setAlert({
+        open: true,
+        message: `Login Un-successful ! Please try again with valid credentials.`,
+        type: "success"
+      })
+    }    
   };
 
   // const handleTestCredentialsClick = async () => {
