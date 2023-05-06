@@ -4,7 +4,7 @@
 ![Breeze Travel App](https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/5d6ab7052525f9f927cc491fabbcac79ac5d701d/.github/images/airplane.png)
 
 
-[Breeze Travel App](https://breeze-travelling-hotel-app.netlify.app/) is a hotel booking website where you can filter out hotels according to rating, number of rooms , bedrooms and price range. 
+[Breeze Travel App](https://breeze-travelling-hotel-app.netlify.app/) is a hotel booking website where you can find hotels and book them for your comfortable stay. You can filter out hotels according to rating, number of rooms and price range. It's a perfect app to find comfy stay at Hotels in India at an amazing prices. 
 
 
 ## List of features
