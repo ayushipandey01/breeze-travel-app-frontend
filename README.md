@@ -1,4 +1,80 @@
-# Getting Started with Create React App
+![ExtensryNBg](image.png)
+
+
+# Extensry
+
+[Breeze Travel App](https://breeze-travelling-hotel-app.netlify.app/) is a hotel booking website where you can filter out hotels according to rating, number of rooms , bedrooms and price range. 
+
+
+## List of features
+[Home Page](https://todo-list-browser-extension.netlify.app/)
+- In the home page, you can start by adding your name and then press the enter key which will route you to the task page. If you refresh the home page you will see a different soothing background image.
+
+Task Page
+-   In the task page, you can add your main/focus task of the day, once you complete the task you can eihter check it or clear it to create a new task. There is a beautiful ToDo at the bottom right of the page that let's you add todos. When the dat changes the main task will be deleted but the todo will still be there.
+
+
+## Tech Stack
+
+- HTML/CSS
+- Javascript
+- ReactJs
+- NodeJS
+- Express.js
+- MongoDB
+
+## Author
+
+-   Ayushi Pandey - follow me on 👇
+-   [GitHub](https://github.com/ayushipandey01)
+-   [LinkedIn](https://www.linkedin.com/in/ayushi-pandey-1a4775149)
+
+## Live Link
+
+https://breeze-travelling-hotel-app.netlify.app/
+
+
+## Run Locally
+
+Clone the project by adding the following command in the terminal.
+Make sure your have git installed and added to path.
+
+```bash
+  git clone https://github.com/ayushipandey01/breeze-travel-app-frontend.git
+```
+<!-- 
+Go to the project directory
+
+```bash
+  cd extensry
+``` -->
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
+## Demo
+
+https://user-images.githubusercontent.com/80476561/169452669-ff9a32dc-d951-45bf-b7b9-dffd238666fe.mp4
+
+## Screenshot
+![img1](https://user-images.githubusercontent.com/40225444/228015534-fc1707f4-b392-4b62-988f-df51e001f6d8.png)
+![img2](https://user-images.githubusercontent.com/40225444/228015745-2a25ed8d-6c95-41c2-b818-08b16dc19067.png)
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +143,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
