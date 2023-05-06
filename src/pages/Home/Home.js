@@ -48,8 +48,6 @@ export const Home = () => {
   const { alert } = useAlert();
   const { dateDispatch } = useDate();
 
-  console.log({isAuthModalOpen});
-
   useEffect(() => {
     (async () => {
       try {

@@ -44,8 +44,23 @@ export const Categories = () => {
     })();
   }, [numberOfcategoryToShow]);
 
-  const handleCategoryClick = (category) => {
-    setHotelCategory(category); 
+  const handleCategoryClick = (category) => {    
+    // setHotelCategory(category)
+    // console.log(category);
+    if(category !== "National Parks" && category !== "Tiny Homes"){
+      // console.log("it is a Farm");
+      setHotelCategory("National Parks");
+    }
+    else{
+      setHotelCategory(category); 
+    }
+    // if(category !== "National Parks" || category !== "Tiny Homes"){
+    //   setHotelCategory("National Parks");
+    // }
+    // else{
+    //   console.log("jsjvjvj");
+    //   setHotelCategory(category); 
+    // }
   };
   // console.log("Hotel Category : " ,hotelCategory);
 
@@ -56,7 +71,7 @@ export const Categories = () => {
             className="button btn-category btn-left fixed cursor-pointer"
             onClick={handleShowMoreLeftClick}
           >
-            <span class="material-icons-outlined">chevron_left</span>
+            <span className="material-icons-outlined">chevron_left</span>
           </button>
         )}
         {categories &&
