@@ -8,12 +8,42 @@
 
 ## List of features
 <!-- [Home Page](https://todo-list-browser-extension.netlify.app/) -->
+
+
+Login/Signup Page
+- In the login page, you can start by logging in to the site or if you are a new user you can signup and then continue logging in to the site.
+(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/login_page.png)
+
+
 Home Page
 
-- In the home page, you can start by adding your name and then press the enter key which will route you to the task page. If you refresh the home page you will see a different soothing background image.
+- In the home page, you can see search bar in the Navbar section, Hotel cards, filter button and profile drop down menu.
+(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/home_page.png)
 
-Task Page
--   In the task page, you can add your main/focus task of the day, once you complete the task you can eihter check it or clear it to create a new task. There is a beautiful ToDo at the bottom right of the page that let's you add todos. When the dat changes the main task will be deleted but the todo will still be there.
+
+Search Bar
+-   In the Navbar, you will find a search bar in which you can search the hotels according to your preffered dates and guests.
+(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/search_bar.png)
+
+Filter Modal
+-   In the Navbar, you will find Filter button where you can filter out Hotels according to Price range, Number of beds , bedrooms and bathroms , property type , ratings and free cancellation.
+(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/filter_modal.png)
+
+Wishlist Page 
+-   In the Navbar, under Profile drop down you will find the option to go to the Wishlist page where you cna find the hotels which are wishlisted.
+(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/wishlist_page.png)
+
+Hotel details Page 
+-   In the Home Page, by clicking on the Hotel Card you will see the hotel details and you can also put in check in and check out dates and number of guests as well from thsi page and proceed towards payment confirmation.
+(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/hotel_details.png)
+
+Confirm booking Page 
+-   On this page , your trip details will be shown and the total amount to be paid. 
+(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/confirm_booking.png)
+
+Order Confirmation Page 
+-   On this page , your order id will get displayed with your trip details. 
+(https://github.com/ayushipandey01/breeze-travel-app-frontend/blob/11b6152e38882d9a55c0ca7f39ce6b0035fa8e30/.github/images/order_summary.png)
 
 
 ## Tech Stack
@@ -63,13 +93,13 @@ Start the server
   npm start
 ```
 
-## Demo
+<!-- ## Demo
 
 https://user-images.githubusercontent.com/80476561/169452669-ff9a32dc-d951-45bf-b7b9-dffd238666fe.mp4
 
 ## Screenshot
 ![img1](https://user-images.githubusercontent.com/40225444/228015534-fc1707f4-b392-4b62-988f-df51e001f6d8.png)
-![img2](https://user-images.githubusercontent.com/40225444/228015745-2a25ed8d-6c95-41c2-b818-08b16dc19067.png)
+![img2](https://user-images.githubusercontent.com/40225444/228015745-2a25ed8d-6c95-41c2-b818-08b16dc19067.png) -->
 
 
 
