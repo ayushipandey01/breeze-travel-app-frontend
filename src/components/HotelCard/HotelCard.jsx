@@ -59,7 +59,7 @@ export const HotelCard = ({ hotel }) => {
         });
       }
     } else {
-      console.log("not found")
+      // console.log("not found")
       authDispatch({
         type: "SHOW_AUTH_MODAL",
       });
