@@ -52,7 +52,7 @@ export const Home = () => {
     (async () => {
       try {
         const { data } = await axios.get(
-          `https://breeze-travel-app.cyclic.app/api/hotels?category=${hotelCategory}`
+          `https://breeze-travel-app-28pc.onrender.com/api/hotels?category=${hotelCategory}`
         );
         // console.log(data);
         setTestData(data);
