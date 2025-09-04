@@ -6,7 +6,7 @@ export const loginHandler = async (number, password) => {
     const {
         data : { accessToken, username },
     } = await axios.post(
-      "https://breeze-travel-app.cyclic.app/api/auth/login",
+      "https://breeze-travel-app-28pc.onrender.com/api/auth/login",
       {
         number: number,
         password: password,
