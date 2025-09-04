@@ -24,7 +24,7 @@ export const Payment = () => {
     (async () => {
       try {
         const { data } = await axios.get(
-          `https://breeze-travel-app.cyclic.app/api/hotels/${id}`
+          `https://breeze-travel-app-28pc.onrender.com/api/hotels/${id}`
         );
         setSingleHotel(data);
       } catch (error) {
